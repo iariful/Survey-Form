@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Survey From my Web page</h1>
+            <p id="description">Thank you for talking the time to help us to improve the platform</p>
+        </header>
+
+        <form action="" id="survey-form">
+
+            <!-- text section start -->
+            <div class="form-group">
+                <label for="Name">Name</label>
+                <input type="text" name="Name" id="Name" class="formControl" placeholder="Enter your name" required>
+            </div>
+            <!-- text section end -->
+
+            <!-- Email Section start -->
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="text" name="Email" id="Email" class="formControl" placeholder="Enter your Email" required>
+            </div>
+            <!-- email section end -->
+
+            <!-- start Number section -->
+            <div class="form-group">
+                <label for="Phone">Phone Number</label>
+                <input type="Number" name="Phone " id="phone" class="formControl" placeholder="Enter your Phone Number" required>
+            </div>
+            <!-- end number section -->
+
+            <!-- address section start -->
+            <div class="form-group">
+                <label for="Address">Address <span class="clue">(Optional)</span></label>
+                <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address" required>
+            </div>
+            <!-- address section end -->
+
+            <!-- start select section -->
+            <div class="form-group">
+                <p id="quest">Which option best describe your current role ?</p>
+                <select name="role" id="dropdwon" class="from-control" required>
+                    <option value="" disabled selected>Select Current Role</option>
+                    <option value="Student">Student</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <!-- End select section -->
+
+            <!-- radio button section start -->
+            <div class="form-group">
+                <p id="quest">How you come to know about My webpage</p>
+                <label for="">
+                   <input type="radio" name="source" value="Friends" class="input radio" checked>Friends
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="Social-media" class="input radio" checked>Social-media
+                 </label>
+                 <label for="">
+                    <input type="radio" name="source" value="Newspaper" class="input radio" checked>Newspaper
+                 </label>
+                 <label for="">
+                    <input type="radio" name="source" value="Tv ads" class="input radio" checked>Tv ads
+                 </label>
+            </div>
+            <!-- radio button section End -->
+
+            <!--start checkbox section -->
+
+            <div class="form-group">
+                <p id="quest">Would you like to see improved</p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="back-end-dev">Back-end Developer
+                </label>
+                
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Font-end-dev">Font-end Developer
+                </label>
+                
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="App developer">App Developer
+                </label>
+
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Android Developer">Android Developer
+                </label>
+            <!-- end checkbox section -->
+
+            <!-- start Textarea Section -->
+               <div class="from-group">
+                   <p id="quest">Give us your Feedback</p>
+                   <textarea name="feedback" id="feedback" cols="30" rows="5" class="textarea" placeholder="Enter Your Feedback here.."></textarea>
+               </div>
+            <!-- End textarea section -->
+
+            <!--start  Submit button -->
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Submit</button>
+            </div>
+            <!-- End submit button -->
+
+        </form>
+    </div>
+</body>
+</html>
